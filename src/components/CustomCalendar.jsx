@@ -126,7 +126,7 @@ function CustomCalendar() {
         events={events}
         startAccessor="start"
         endAccessor="end"
-        views={{ day: true, week: true, weekdays: WeekdaysView, month: true }}
+        views={{ day: true, week: true, weekdays: WeekdaysView }}
         defaultView="weekdays"
         messages={{ weekdays: 'Weekdays' }}
         onSelectSlot={handleSelectSlot}
