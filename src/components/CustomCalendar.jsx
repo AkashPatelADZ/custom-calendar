@@ -22,8 +22,8 @@ const NewEventDialog = ({ event, open, setOpen, addEvent }) => {
     const start = new dayjs(event.start)
       .set('hour', startTime.substring(0, 2))
       .toDate()
-    const end = new dayjs(event.start)
-      .set('hour', startTime.substring(0, 2))
+    const end = new dayjs(event.end)
+      .set('hour', endTime.substring(0, 2))
       .toDate()
 
     addEvent({ title, start, end })
